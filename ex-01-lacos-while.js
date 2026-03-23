@@ -174,16 +174,36 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let indice = 1;
+let somaFinal = 0;
+let numInicial = 0;
+let numProximo = 0;
+while(indice<=32){
+    numProximo+=indice;
+    somaFinal = numInicial + numProximo;
 
-export const resposta01 = false
+    indice++;
+}
+
+export const resposta01 = somaFinal;
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let indice = 0;
+let num = 0;
+let somaFinal2 = 0;
+while(indice<=50){
+    if(num%2!=0){
+        somaFinal2+=num
+    }
+    num++
+    indice++
+}
 
-export const resposta02 = false
+export const resposta02 = somaFinal2
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -193,15 +213,34 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+let indice = 0;
+let numLista=0;
+while(indice <= numeros.length - 1){
+    if (numeros[indice] < 0){
+        numLista++
+    }
+    indice++
+}
+
+export const resposta03 = numLista
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta04 = false
+let indice = 0;
+let num= 0;
+let somaFinal4 = 0;
+while(indice<=100){
+    if(num % 7 == 0){
+        somaFinal4 +=num
+    }
+    num++
+    indice++
+}
+export const resposta04 = somaFinal4
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -220,8 +259,20 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+let indice = 0
+let indiceReverso = nomes.length - 1
+let novaArray = []
+while(indice <= nomes.length-1){
+    if(nomes[indice] && indiceReverso >=0){
+        let nome = nomes[indiceReverso]
+        novaArray[indice] = novaArray.push = nome
+        
+        indiceReverso-=1
+    }
+    
+    indice++
+}
+export const resposta05 = novaArray
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
