@@ -110,8 +110,8 @@ let indice = 0
 
 while (indice < numeros.length) {
   console.log(numeros[indice])
-  indice = indice + 3
-}
+    indice = indice + 3
+    }
 
 - O código acima imprime os números da lista pulando de 3 em 3 índices
 
@@ -174,16 +174,34 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let theStart = 0
+let theLast = 32
+let soma = 0;
 
-export const resposta01 = false
+while (theStart < theLast) {
+  theStart = theStart + 1;
+   soma = soma + theStart
+}
+export const resposta01 = soma
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta02 = false
+let lista = []
+let soma2 = 0
+let i = 0
+while (i < 50) {
+    i++;
+    lista.push(i);
+    if (i % 2 === 1)
+        {
+            soma2 += i;
+        }
+        
+}
+export const resposta02 = soma2
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
