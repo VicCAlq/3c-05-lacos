@@ -192,15 +192,15 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let indice = 0;
-let num = 0;
+let indice2 = 0;
+let num2 = 0;
 let somaFinal2 = 0;
-while(indice<=50){
-    if(num%2!=0){
+while(indice2<=50){
+    if(num2%2!=0){
         somaFinal2+=num
     }
-    num++
-    indice++
+    num2++
+    indice2++
 }
 
 export const resposta02 = somaFinal2
@@ -214,13 +214,13 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 // Escreva o código da solução abaixo:
 
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-let indice = 0;
+let indice3 = 0;
 let numLista=0;
 while(indice <= numeros.length - 1){
-    if (numeros[indice] < 0){
+    if (numeros[indice3] < 0){
         numLista++
     }
-    indice++
+    indice3++
 }
 
 export const resposta03 = numLista
@@ -230,15 +230,15 @@ Utilizando um laço de repetição while, faça a soma de todos os múltiplos de
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-let indice = 0;
-let num= 0;
+let indice4 = 0;
+let num4= 0;
 let somaFinal4 = 0;
-while(indice<=100){
-    if(num % 7 == 0){
-        somaFinal4 +=num
+while(indice4<=100){
+    if(num4 % 7 == 0){
+        somaFinal4 +=num4
     }
-    num++
-    indice++
+    num4++
+    indice4++
 }
 export const resposta04 = somaFinal4
 
@@ -259,18 +259,18 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let indice = 0
+let indice5 = 0
 let indiceReverso = nomes.length - 1
 let novaArray = []
-while(indice <= nomes.length-1){
-    if(nomes[indice] && indiceReverso >=0){
+while(indice5 <= nomes.length-1){
+    if(nomes[indice5] && indiceReverso >=0){
         let nome = nomes[indiceReverso]
-        novaArray[indice] = novaArray.push = nome
+        novaArray[indice5] = novaArray.push = nome
         
         indiceReverso-=1
     }
     
-    indice++
+    indice5++
 }
 export const resposta05 = novaArray
 
