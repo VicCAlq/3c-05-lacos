@@ -280,16 +280,38 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let indice6 = 0;
+let nomesPares = [];
+let indice7 = 0;
+while(indice6 <= nomes.length - 1){
+    if(indice6%2==0){
+        let nome = nomes[indice6]
+        nomesPares[indice7] = nomesPares.push = nome
+        indice7++
+    }
+    indice6++  
+}
 
-export const resposta06 = false
+export const resposta06 = nomesPares
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let nomesCincoLetrasOuMenos = []
+let nomeCincoLetrasOuMenos = ""
+let indiceQuestao7 = 0
+let indiceQuestao71 = 0;
+while(indiceQuestao7 <= nomes.length-1){
+    if(nomes[indiceQuestao7].length <= 5){
+        nomeCincoLetrasOuMenos = nomes[indiceQuestao7]
+        nomesCincoLetrasOuMenos[indiceQuestao71] = nomesCincoLetrasOuMenos.push(nomeCincoLetrasOuMenos)
+    }
+    indiceQuestao7++
+}
 
-export const resposta07 = false
+export const resposta07 = nomesCincoLetrasOuMenos
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
