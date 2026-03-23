@@ -1,7 +1,7 @@
 /*
 Assunto 01 - Laços de repetição: While
 
-Uma das principais utilizades de realizar uma operação como código é a possibilidade
+Uma das principais utilidades de realizar uma operação como código é a possibilidade
 de repetir a execução de um conjunto de instrições que escrevemos uma única vez. A
 estrutura que nos permite isso é chamada de "Laço de Repetição".
 
@@ -174,16 +174,33 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let numerosBabao = 32
+let primeiro = 0
+let soma = 0
 
-export const resposta01 = false
+while (primeiro <= numerosBabao) {
+  primeiro += 1
+  soma = soma += primeiro
+}
+console.log(soma)
+export const resposta01 = soma
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let RPdosCria = 1
+let Bolsonario = 0
 
-export const resposta02 = false
+while (RPdosCria <= 50) {
+  if (RPdosCria % 2 !== 0) {
+    Bolsonario += RPdosCria
+  }
+  RPdosCria++
+}
+
+export const resposta02 = RPdosCria
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -192,8 +209,18 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 
-export const resposta03 = false
+let numero1 = 0
+let contadorNegg = 0
+
+while (numero1 < numeros.length) {
+  if (numeros[contadorNegg] < 0) {
+    contadorNegg++
+  }
+  numero1++
+}
+export const resposta03 = contadorNegg
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
