@@ -300,13 +300,12 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 let nomesCincoLetrasOuMenos = []
-let nomeCincoLetrasOuMenos = ""
 let indiceQuestao7 = 0
-let indiceQuestao71 = 0;
 while(indiceQuestao7 <= nomes.length-1){
     if(nomes[indiceQuestao7].length <= 5){
-        nomeCincoLetrasOuMenos = nomes[indiceQuestao7]
-        nomesCincoLetrasOuMenos[indiceQuestao71] = nomesCincoLetrasOuMenos.push(nomeCincoLetrasOuMenos)
+        let indiceQuestao71=0;
+        nomesCincoLetrasOuMenos.push(nomes[indiceQuestao7])
+        indiceQuestao71++
     }
     indiceQuestao7++
 }
@@ -319,7 +318,13 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let indiceQuestao08 = 0
+let tudoMaiusculo = []
+while(indiceQuestao08<= nomes.length-1){
+    tudoMaiusculo.push(nomes[indiceQuestao08].toUpperCase())
+    indiceQuestao08++
+}
+export const resposta08 = tudoMaiusculo
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -328,7 +333,17 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let indiceQuestao09 = 0 
+let nomeIniciaVogal = []
+while(indiceQuestao09<= nomes.length-1){
+    let nomeLetras = nomes[indiceQuestao09]
+    if(nomeLetras[0]){
+        nomeIniciaVogal.push(nomeLetras)
+    }
+    indiceQuestao09++
+}
+export const resposta09 = nomeIniciaVogal
+console.log(nomeIniciaVogal)
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
