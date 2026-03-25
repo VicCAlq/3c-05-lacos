@@ -337,13 +337,12 @@ let indiceQuestao09 = 0
 let nomeIniciaVogal = []
 while(indiceQuestao09<= nomes.length-1){
     let nomeLetras = nomes[indiceQuestao09]
-    if(nomeLetras[0]){
+    if(nomeLetras[0] == "A" || nomeLetras[0] == "E" ||nomeLetras[0] == "I" ||nomeLetras[0] == "O" ||nomeLetras[0] == "U"){
         nomeIniciaVogal.push(nomeLetras)
     }
     indiceQuestao09++
 }
 export const resposta09 = nomeIniciaVogal
-console.log(nomeIniciaVogal)
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -351,5 +350,14 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+let indiceQuestao10 = 0;
+let maiorNome =""
+
+while(indiceQuestao10<= nomes.len-1){
+  if(indiceQuestao10 > 0 && nomes[indiceQuestao10] > nomes[indiceQuestao10 - 1]){
+    maiorNome = nomes[indiceQuestao10]
+  }
+  indiceQuestao10++
+}
 
 export const resposta10 = false
