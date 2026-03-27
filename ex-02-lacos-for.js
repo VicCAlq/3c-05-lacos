@@ -189,16 +189,26 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 (incluindo 100). Armazene o resultado na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta01 = false
+let num01=0
+let soma=0
+for(let i=0; i<=100;i++){
+  soma= num01+=i
+}
+export const resposta01 = soma
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let numerosImpares = 0
+for(let i =0; i<=50; i++){
+  if(i%2!=0){
+    numerosImpares++
+  }
+}
 
-export const resposta02 = false
+export const resposta02 = numerosImpares
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -206,8 +216,14 @@ negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na
 variável resposta03.
 */
 // Escreva o código da solução abaixo:
+let numerosParesENegativos=0;
+for(let i=-100;i<=-1;i++){
+  if(i%2==0 && i <0){
+    numerosParesENegativos+=i
+  }
+}
 
-export const resposta03 = false
+export const resposta03 = numerosParesENegativos
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
