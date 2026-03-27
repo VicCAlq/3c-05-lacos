@@ -197,7 +197,7 @@ let num2 = 0;
 let somaFinal2 = 0;
 while(indice2<=50){
     if(num2%2!=0){
-        somaFinal2+=num
+        somaFinal2+=num2
     }
     num2++
     indice2++
@@ -216,7 +216,7 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 let indice3 = 0;
 let numLista=0;
-while(indice <= numeros.length - 1){
+while(indice3 <= numeros.length - 1){
     if (numeros[indice3] < 0){
         numLista++
     }
@@ -231,13 +231,11 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 let indice4 = 0;
-let num4= 0;
 let somaFinal4 = 0;
 while(indice4<=100){
-    if(num4 % 7 == 0){
-        somaFinal4 +=num4
+    if(indice4 % 7 == 0){
+        somaFinal4 +=7
     }
-    num4++
     indice4++
 }
 export const resposta04 = somaFinal4
@@ -351,13 +349,12 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 let indiceQuestao10 = 0;
-let maiorNome =""
-
-while(indiceQuestao10<= nomes.len-1){
-  if(indiceQuestao10 > 0 && nomes[indiceQuestao10] > nomes[indiceQuestao10 - 1]){
+let maiorNome = nomes[0];
+while(indiceQuestao10 <= nomes.length-1){
+  if(nomes[indiceQuestao10].length > maiorNome.length){
     maiorNome = nomes[indiceQuestao10]
   }
   indiceQuestao10++
 }
 
-export const resposta10 = false
+export const resposta10 = maiorNome
