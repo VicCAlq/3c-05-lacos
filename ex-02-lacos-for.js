@@ -324,14 +324,11 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-let inicioDeLetrasMaiusculas = []
+let letrasMaiusculas = []
 for(let nomesMaisculos of petsExoticos){
-  let indice = 0;
-  inicioDeLetrasMaiusculas.push(nomesMaisculos)
-  console.log(inicioDeLetrasMaiusculas)
-  indice++
+  letrasMaiusculas.push(nomesMaisculos.toUpperCase())
 }
-export const resposta09 = false
+export const resposta09 = letrasMaiusculas
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
@@ -344,8 +341,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta10 = false
+let nomesComLetraR = []
+for(let nome of petsExoticos){
+  if(nome.includes("r")){
+    nomesComLetraR.push(nome)
+  }
+}
+export const resposta10 = nomesComLetraR
 
 /* Questão 11
 Continuando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -354,12 +356,17 @@ variável resposta11.
 
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
-  "escorpião", "sagui", "jacaré", "serpente", "camaleão"
-]
+    "escorpião", "sagui", "jacaré", "serpente", "camaleão"
+    ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta11 = false
+let quantidadeDePetsComMaisDe7Letras = 0;
+for(let nome of petsExoticos){
+  if(nome.length > 7){
+    quantidadeDePetsComMaisDe7Letras++
+  }
+}
+export const resposta11 = quantidadeDePetsComMaisDe7Letras
 
 /* Questão 12
 Encerrando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -372,5 +379,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-
-export const resposta12 = false
+let nomeQueComecaComS = ""
+for(let nome of petsExoticos){
+  if(nome[0] == "s"){
+    nomeQueComecaComS = nome
+    break
+  } else{
+    nomeQueComecaComS = "não encontrado"
+  }
+}
+export const resposta12 = nomeQueComecaComS
