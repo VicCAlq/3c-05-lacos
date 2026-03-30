@@ -214,7 +214,7 @@ negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na
 variável resposta03.
 */
 // Escreva o código da solução abaixo:
-somaNegativos = 0
+let somaNegativos = 0
 for(i = -100; i <= -1; i++){
   if(i % 2 == 0){
     somaNegativos+= i
@@ -236,7 +236,7 @@ for(let i = 1; i <= 200; i++){
     divisao++
   }
 }
-media = mediaTres / divisao
+let media = mediaTres / divisao
 export const resposta04 = media
 
 // Lista para as questões 5 a 8:
