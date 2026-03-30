@@ -230,7 +230,7 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 // Escreva o código da solução abaixo:
 let mediaTres = 0
 let divisao = 0
-for(i = 1; i <= 200; i++){
+for(let i = 1; i <= 200; i++){
   if(i%3 == 0){
     mediaTres += i
     divisao++
@@ -254,7 +254,7 @@ Armazene o novo array na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 const arrayC = []
-for(i = 0; i < itensDomesticos.length; i++){
+for(let i = 0; i < itensDomesticos.length; i++){
   if(itensDomesticos[i][0] == "c"){
     arrayC.push(itensDomesticos[i])
   }
@@ -269,7 +269,7 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 const domesticosImpar = []
-for(i = 0; i < itensDomesticos.length; i++){
+for(let i = 0; i < itensDomesticos.length; i++){
   if(i % 2 != 0 ){
     domesticosImpar.push(itensDomesticos[i])
   }
@@ -283,7 +283,7 @@ na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 const domesticosLongos = []
-for(i = 0; i < itensDomesticos.length; i++){
+for(let i = 0; i < itensDomesticos.length; i++){
   if(itensDomesticos[i].length > 6){
     domesticosLongos.push(itensDomesticos[i])
   }
@@ -297,7 +297,7 @@ o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 const domestivosInverso = []
-for( i = itensDomesticos.length -1; i >= 0; i--){
+for(let i = itensDomesticos.length -1; i >= 0; i--){
   domestivosInverso.push(itensDomesticos[i])
 }
 export const resposta08 = domestivosInverso
