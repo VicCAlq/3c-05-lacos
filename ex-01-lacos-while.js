@@ -174,29 +174,30 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-
-
-let com = 0;
+let inicio = 1;
 let fim = 32;
 let soma = 0;
-while(com <= fim){
-  soma += com
-  com++
-}
-export const resposta01 = soma
 
+while (inicio <= fim) {
+  soma += inicio;
+  inicio++;
+}
+
+export const resposta01 = soma
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let impares = 1; 
-while (impares <= 50){
-  somaImapar += impares;
-  impares += 2;
+let numero = 1;
+let somaImpar = 0;
+
+while (numero <= 50) {
+  somaImpar += numero;
+  numero += 2;
 }
 
-export const resposta02 = somaImapar;
+export const resposta02 = somaImpar
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -206,19 +207,19 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
 
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-indeceParOuPositivo = 0;
-indece = 0;
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+
+let indice = 0;
+let contadorNegativos = 0;
+
 while (indice < numeros.length) {
-  let numero = numeros[indice];
-  if (numero < 0){
-    indece++
-  } else{
-    indeceParOuPositivo++ //só para completar a logica;
+  if (numeros[indice] < 0) {
+    contadorNegativos++;
   }
+  indice++;
 }
 
-export const resposta03 = indece
+export const resposta03 = contadorNegativos
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
@@ -231,22 +232,17 @@ Utilizando um laço de repetição while, faça a soma de todos os múltiplos de
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 
-const numer = [];
-for (let i = 1; i <= 100; i++) {
-  numer.push(i);
-}
+let numeroAtual = 1;
+let somaMultiplos7 = 0;
 
-let inde = 0;     
-let somaIm = 0;   
-
-while (inde < numer.length) {  
-  if (numer[inde] % 7 === 0) {
-    somaIm += numer[inde];    
+while (numeroAtual <= 100) {
+  if (numeroAtual % 7 === 0) {
+    somaMultiplos7 += numeroAtual;
   }
-  inde++;  
+  numeroAtual++;
 }
 
-export const resposta04 = somaIm;
+export const resposta04 = somaMultiplos7
 
 
 // Lista para as questões 5 a 10:
@@ -266,8 +262,15 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+let i = nomes.length - 1
+let resultado = []
 
-export const resposta05 = false
+while (i >= 0) {
+  resultado.push(nomes[i])
+  i--
+}
+
+export const resposta05 = resultado
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -275,25 +278,47 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let indice = 0
+let listaPares = []
 
-export const resposta06 = false
+while (indice < nomes.length) {
+  listaPares.push(nomes[indice])
+  indice += 2
+}
+
+export const resposta06 = listaPares
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let names = 0
+let nomesComCinco = []
 
-export const resposta07 = false
+while (names < nomes.length) {
+  if (nomes[names].length <= 5) {
+    nomesComCinco.push(nomes[names])
+  }
+  names++
+}
+
+export const resposta07 = nomesComCinco
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+let ecidni = 0
+let nomesMaiusculos = []
 
-export const resposta08 = false
+while (ecidni < nomes.length) {
+  nomesMaiusculos.push(nomes[ecidni].toUpperCase())
+  ecidni++
+}
 
+export const resposta08 = nomesMaiusculos
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
 que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver).
