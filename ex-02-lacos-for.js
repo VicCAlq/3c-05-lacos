@@ -282,8 +282,13 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta07 = false
+const domesticosLongos = []
+for(i = 0; i < itensDomesticos.length; i++){
+  if(itensDomesticos[i].length > 6){
+    domesticosLongos.push(itensDomesticos[i])
+  }
+}
+export const resposta07 = domesticosLongos
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
@@ -291,8 +296,11 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta08 = false
+const domestivosInverso = []
+for( i = itensDomesticos.length -1; i >= 0; i--){
+  domestivosInverso.push(itensDomesticos[i])
+}
+export const resposta08 = domestivosInverso
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
