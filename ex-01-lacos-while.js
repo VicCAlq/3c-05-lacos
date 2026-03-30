@@ -175,28 +175,30 @@ de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
 
-
-let com = 0;
-let fim = 32;
-let soma = 0;
-while(com <= fim){
-  soma += com
-  com++
+let soma = 0
+let i = 0
+while (i <= 32) {
+  
+    soma = soma + i
+    i++
 }
 export const resposta01 = soma
+ 
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let impares = 1; 
-while (impares <= 50){
-  somaImapar += impares;
-  impares += 2;
+let Resu = 0; 
+let imp = 0 
+while (imp <= 50){
+  if(imp % 2 !== 0)
+  Resu = Resu + Imp
 }
+imp++
 
-export const resposta02 = somaImapar;
+export const resposta02 = somaImpares;
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -207,8 +209,8 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 // Escreva o código da solução abaixo:
 
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-indeceParOuPositivo = 0;
-indece = 0;
+indiceParOuPositivo = 0;
+indice = 0;
 while (indice < numeros.length) {
   let numero = numeros[indice];
   if (numero < 0){
@@ -266,8 +268,13 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-
-export const resposta05 = false
+let lista = [];
+let indice = 9
+while (indice >= 0){
+    lista += nomes[indice]
+    indice--
+}
+export const resposta05 = lista
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -275,8 +282,15 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let pares = []
+let ind = 0
 
-export const resposta06 = false
+while(ind < nomes.length) {
+  nomes += 2
+  pares.push(nomes[ind])
+}
+
+export const resposta06 = pares
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
