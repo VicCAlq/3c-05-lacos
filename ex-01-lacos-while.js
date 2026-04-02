@@ -230,22 +230,19 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 // Escreva o código da solução abaixo:
 let indQuestao4 = 0
 let somaQuestao4 = 0
-let contadorQuestao4 = 0
+
 while (indQuestao4 < 100) {
-indQuestao4++
-if (indQuestao4 % 7 == 0) {
-    contadorQuestao4 = contadorQuestao4 + 7
-   
-    
-} 
-somaQuestao4 = somaQuestao4 + contadorQuestao4
-console.log(somaQuestao4)
+    indQuestao4++
+
+    if (indQuestao4 % 7 == 0) {
+        somaQuestao4 = somaQuestao4 + indQuestao4
+    }
 }
 
 
 
 
-export const resposta04 = false
+export const resposta04 = somaQuestao4
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -265,7 +262,17 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+
+let indiceQuestao5 = nomes.length;
+let novaLista5 = []
+
+while (indiceQuestao5 > 0) {
+    indiceQuestao5--
+    novaLista5.push(nomes[indiceQuestao5])
+    
+}
+
+export const resposta05 = novaLista5
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -274,7 +281,17 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let indQuestao6 = nomes.length
+let = novaLista6 = []
+while (indQuestao6 >= 0) {
+  indQuestao6--
+  if (indQuestao6 % 2 == 0) {
+    novaLista6.unshift(nomes[indQuestao6])
+  }
+} 
+console.log(novaLista6);
+
+export const resposta06 = novaLista6
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -282,7 +299,18 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta07 = false
+let indQuestao7 = nomes.length
+let novaLista7 = []
+
+while (indQuestao7 > 0) {
+    indQuestao7--
+    if (nomes[indQuestao7].length <= 5) {
+        novaLista7.unshift(nomes[indQuestao7])
+    }
+}
+
+
+export const resposta07 = novaLista7
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -290,7 +318,15 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let indQuestao8 = 0
+let novaLista8 = []
+
+while (indQuestao8 < nomes.length) {
+    novaLista8.push(nomes[indQuestao8].toUpperCase())
+    indQuestao8++
+}
+
+export const resposta08 = novaLista8
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -298,8 +334,18 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let indQuestao9 = 0
+let novaLista9 = []
 
-export const resposta09 = false
+while (indQuestao9 < nomes.length) {
+  indQuestao9++
+    let nomeLido = nomes[indQuestao9]
+    let primeiraLetra = nomeLido[0]
+    if (primeiraLetra == "A" || primeiraLetra == "E" || primeiraLetra == "I" || primeiraLetra == "O" || primeiraLetra == "U") {
+      novaLista9.push(nomeLido)
+    }
+}
+export const resposta09 = novaLista9
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -307,5 +353,18 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+let indQuestao10 = 0
+let nomeDoBom = ""
+let maiorTamanho = 0
 
-export const resposta10 = false
+while (indQuestao10 < nomes.length) {
+    let numeroLido2 = nomes[indQuestao10]
+    if (numeroLido2.length > maiorTamanho) {
+        maiorTamanho = numeroLido2.length
+        nomeDoBom = numeroLido2
+    }
+
+    indQuestao10++
+}
+
+export const resposta10 = nomeDoBom
