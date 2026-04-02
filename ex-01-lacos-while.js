@@ -212,7 +212,7 @@ const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 // Escreva o código da solução abaixo:
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 let indiceQuestao3 = 0
-somaQuestao3 = 0
+let somaQuestao3 = 0
 
 while (indiceQuestao3 < numeros.length) {
   if (numeros[indiceQuestao3] < 0 ) {
@@ -281,15 +281,16 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-let indQuestao6 = nomes.length
-let = novaLista6 = []
-while (indQuestao6 >= 0) {
-  indQuestao6--
+let indQuestao6 = 0;
+
+let novaLista6 = [];
+
+while (indQuestao6 < nomes.length) {
   if (indQuestao6 % 2 == 0) {
-    novaLista6.unshift(nomes[indQuestao6])
+    novaLista6.push(nomes[indQuestao6])
   }
-} 
-console.log(novaLista6);
+  indQuestao6++
+}
 
 export const resposta06 = novaLista6
 
@@ -338,12 +339,13 @@ let indQuestao9 = 0
 let novaLista9 = []
 
 while (indQuestao9 < nomes.length) {
-  indQuestao9++
+
     let nomeLido = nomes[indQuestao9]
     let primeiraLetra = nomeLido[0]
     if (primeiraLetra == "A" || primeiraLetra == "E" || primeiraLetra == "I" || primeiraLetra == "O" || primeiraLetra == "U") {
       novaLista9.push(nomeLido)
     }
+      indQuestao9++
 }
 export const resposta09 = novaLista9
 
