@@ -186,15 +186,6 @@ export const resposta01 = soma
 
 
 
-let com = 0;
-let fim = 32;
-let soma = 0;
-while(com <= fim){
-  soma += com
-  com++
-}
-export const resposta01 = soma
-
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
@@ -203,12 +194,6 @@ de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta0
 
 let Resu = 0
 let Imp = 0
-=======
-let impares = 1; 
-while (impares <= 50){
-  somaImapar += impares;
-  impares += 2;
-}
 
 
 
@@ -216,11 +201,9 @@ while(Imp <= 50){
     if(Imp % 2 !== 0) {
         Resu = Resu + Imp
     }
+
     Imp++
 }
-=======
-export const resposta02 = somaImapar
-
 
 export const resposta02 = Resu
 
@@ -244,28 +227,12 @@ while (ind < numeros.length){
   
 }
 
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-indeceParOuPositivo = 0;
-indece = 0;
-while (indice < numeros.length) {
-  let numero = numeros[indice];
-  if (numero < 0){
-    indece++
-  } else{
-    indeceParOuPositivo++ //só para completar a logica;
-  }
-}
-
-
-
 
 export const resposta03 = negativos
 
-=======
-export const resposta03 = indece
 
 
-Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
+/*Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
@@ -274,23 +241,17 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
-
-const numer = [];
-for (let i = 1; i <= 100; i++) {
-  numer.push(i);
+let yuta = 0
+let rika = 0
+while (rika <= 100) {
+    if(rika % 7 ==  0){
+        yuta = yuta + rika
+    }
+    rika++
+    console.log(yuta)
 }
 
-let inde = 0;     
-let somaIm = 0;   
-
-while (inde < numer.length) {  
-  if (numer[inde] % 7 === 0) {
-    somaIm += numer[inde];    
-  }
-  inde++;  
-}
-
-export const resposta04 = somaIm;
+export const resposta04 =  yuta
 
 
 // Lista para as questões 5 a 10:
@@ -310,8 +271,15 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
+let reverse = []
+let ajuda = 10
 
-export const resposta05 = false
+while(reverse.length < ajuda){
+    reverse.unshift(nomes.shift())
+    console.log(reverse)
+}
+
+export const resposta05 = reverse
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
