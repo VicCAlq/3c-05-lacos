@@ -1,4 +1,4 @@
-Data de atualização: Dia 02/04/2026 às 18:51:51
+Data de atualização: Dia 03/04/2026 às 20:30:21
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
@@ -13,9 +13,9 @@ Data de atualização: Dia 02/04/2026 às 18:51:51
 |  8 | Ex 01 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  9 | Ex 01 | ✅ | ✅ | Nenhum erro |
 | 10 | Ex 01 | ✅ | ✅ | Nenhum erro |
-|  1 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  2 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  3 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
+|  1 | Ex 02 | ✅ | ✅ | Nenhum erro |
+|  2 | Ex 02 | ✅ | ❌ | AssertionError: expected 625 to deeply equal 25 |
+|  3 | Ex 02 | ✅ | ✅ | Nenhum erro |
 |  4 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  5 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  6 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
