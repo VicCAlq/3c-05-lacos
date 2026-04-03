@@ -181,8 +181,8 @@ let i = 1;
 while (i<=32) 
 {
   soma += i;
-  i ++;
-}
+    i ++;
+    }
 
 export const resposta01 = soma
 
@@ -206,7 +206,7 @@ export const resposta02 = somaDois
 Crie um laço de repetição while que conte quantos números negativos existem no
 array abaixo. Armazene a quantidade encontrada na variável resposta03.
 */
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
 // Escreva o código da solução abaixo:
 let n = 0;
 let negativos = 0;
