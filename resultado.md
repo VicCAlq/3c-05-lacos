@@ -1,4 +1,4 @@
-Data de atualização: Dia 03/04/2026 às 20:30:21
+Data de atualização: Dia 04/04/2026 às 15:52:21
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
@@ -16,8 +16,8 @@ Data de atualização: Dia 03/04/2026 às 20:30:21
 |  1 | Ex 02 | ✅ | ✅ | Nenhum erro |
 |  2 | Ex 02 | ✅ | ❌ | AssertionError: expected 625 to deeply equal 25 |
 |  3 | Ex 02 | ✅ | ✅ | Nenhum erro |
-|  4 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
-|  5 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
+|  4 | Ex 02 | ✅ | ❌ | AssertionError: expected 100.5 to deeply equal 99 |
+|  5 | Ex 02 | ✅ | ✅ | Nenhum erro |
 |  6 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  7 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  8 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
