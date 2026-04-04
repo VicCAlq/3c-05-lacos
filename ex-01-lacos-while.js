@@ -271,12 +271,14 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let reverse = []
-let ajuda = 10
+const reverse = []
+let ajuda = 0
 
-while(reverse.length < ajuda){
-    reverse.unshift(nomes.shift())
+while(nomes.length > ajuda){
+    reverse.unshift(nomes[ajuda])
+    ajuda++
     console.log(reverse)
+   
 }
 
 export const resposta05 = reverse
@@ -287,24 +289,52 @@ apenas os nomes que estão nos índices pares da lista original (índices 0, 2, 
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
+let novaL = []
+let ajuda2 = 0
 
-export const resposta06 = false
+while (ajuda2 < nomes.length) {
+    if (ajuda2 % 2 === 0) {
+        novaL.push(nomes[ajuda2])
+    }
+    console.log(novaL)
+    i++
+}
+
+export const resposta06 = novaL
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let nomeG = []
+let ajuda3 = 0
 
-export const resposta07 = false
+while (ajuda3 < nomes.length){
+    if(nomes[ajuda3].length <= 5){
+        nomeG.push(nomes[ajuda3])
+    }
+    ajuda3++
+    console.log(nomeG)
+}
+
+export const resposta07 = nomeG
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+let gojo = []
+let ajuda4 = 0
 
-export const resposta08 = false
+while(ajuda4 < nomes.length){
+    gojo.push(nomes[ajuda4].toUpperCase())
+    ajuda4++
+    console.log(gojo)
+}
+
+export const resposta08 = gojo
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -312,8 +342,30 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let sukuna = []
+let ajuda5 = 0
 
-export const resposta09 = false
+while(ajuda5 < nomes.length){
+    if(nomes[ajuda5][0] === "A"){
+        sukuna.push(nomes[ajuda5])
+    }
+    else if(nomes[ajuda5][0] === "E"){
+        sukuna.push(nomes[ajuda5])
+    }
+    else if(nomes[ajuda5][0] === "I"){
+        sukuna.push(nomes[ajuda5])
+    }
+    else if(nomes[ajuda5][0] === "O"){
+        sukuna.push(nomes[ajuda5])
+    }
+    else if(nomes[ajuda5][0] === "U"){
+        sukuna.push(nomes[ajuda5])
+    }
+    ajuda5++
+    console.log(sukuna)
+}
+
+export const resposta09 = sukuna
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -322,4 +374,18 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let izana = []
+let ajuda6 = 0
+
+while(ajuda6 < nomes.length){
+    if(izana[0] == undefined){
+        izana[0] = nomes[ajuda6]
+    }
+    else if(nomes[ajuda6].length > izana[0].length){
+        izana[0] = nomes[ajuda6]
+    }
+    ajuda6++
+    console.log(izana)
+}
+
+export const resposta10 = izana
