@@ -229,8 +229,17 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let somaQuatro = 0;
+let quantidade = 0;
+for (let c = 1; c <= 200; c++) {
+if (c % 3 === 0) {
+somaQuatro += c;
+quantidade++;
+}
+}
+let media = somaQuatro / quantidade;
 
-export const resposta04 = false
+export const resposta04 = media
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -246,8 +255,14 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
+const listaC = [];
+for(let d = 0; d < itensDomesticos.length; d++){
+  if (itensDomesticos[d].toLowerCase().startsWith('c')) {
+    listaC.push(itensDomesticos[d]);
+  }
+}
 
-export const resposta05 = false
+export const resposta05 = listaC
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
