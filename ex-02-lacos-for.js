@@ -392,6 +392,12 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
+let r = "não encontrado"
+for(h of petsExoticos){
+  if(h[0] === "s" && r === "não encontrado"){
+    r = h
+  }
+  console.log(r)
+}
 
-
-export const resposta12 = false
+export const resposta12 = r
