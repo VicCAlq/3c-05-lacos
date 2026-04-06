@@ -189,16 +189,28 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 (incluindo 100). Armazene o resultado na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+let soma1 = 0
+let ind1
+for (let ind1 = 1; ind1 <= 100; ind1++) {
+  soma1 += ind1
+}
 
-export const resposta01 = false
+export const resposta01 = soma1
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
+let impares = 0
+let ind2
+for (let ind2 = 1; ind2 <= 50; ind2++) {
+  if (ind2 % 2 !== 0) {
+    impares++
+  }
+}
 
-export const resposta02 = false
+export const resposta02 = contadorImpares
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -207,7 +219,15 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+let somaNegativos = 0
+
+for (let numero = -100; numero <= -1; numero++) {
+  if (numero % 2 === 0) {
+    somaNegativos += numero
+  }
+}
+
+export const resposta03 = somaNegativos
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
@@ -216,7 +236,16 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 */
 // Escreva o código da solução abaixo:
 
-export const resposta04 = false
+let somaMultiplos = 0
+let quantidade = 0
+
+for (let numero = 1; numero <= 200; numero++) {
+  if (numero % 3 === 0) {
+    somaMultiplos += numero
+    quantidade++
+  }
+}
+export const resposta04 =  quantidade
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -233,7 +262,15 @@ Armazene o novo array na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+let listaBomb = []
+
+for (let indice = 0; indice < itensDomesticos.length; indice++) {
+  if (itensDomesticos[indice][0] === "c") {
+    listaC.push(itensDomesticos[indice])
+  }
+}
+
+export const resposta05 = listaBomb
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -243,8 +280,13 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let ipIpIMpares = []
 
+for (let indice = 1; indice < itensDomesticos.length; indice += 2) {
+  ipIpIMpares.push(itensDomesticos[indice])
+}
+
+export const resposta06 = ipIpIMpares
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
@@ -304,7 +346,15 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 
-export const resposta11 = false
+let contagem = 0
+
+for (let pet of petsExoticos) {
+  if (pet.length > 7) {
+    contagem++
+  }
+}
+
+export const resposta11 = contagem
 
 /* Questão 12
 Encerrando com a lista de pets exóticos, use um laço de repetição for...of para
@@ -318,4 +368,14 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 
-export const resposta12 = false
+let encontrado = "não encontrado"
+
+for (let pet of petsExoticos) {
+  if (pet[0] === "s") {
+    encontrado = pet
+    break
+  }
+}
+
+export const resposta12 = encontrado
+
