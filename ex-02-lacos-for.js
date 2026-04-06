@@ -392,4 +392,6 @@ for (let item of petsExoticos) {
     comecaComS = item
   }
 }
+if(comecaComS == "a")
+{comecaComS="não encontrado"}
 export const resposta12 = comecaComS
