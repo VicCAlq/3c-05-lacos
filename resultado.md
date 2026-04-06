@@ -1,10 +1,10 @@
-Data de atualização: Dia 06/04/2026 às 08:16:55
+Data de atualização: Dia 06/04/2026 às 08:32:26
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
 | ❌❌❌ | Ex 1 | ❌❌❌ | ❌❌❌ | Parse failure: Expression expected
-At file: /ex-01-lacos-while.js:229:0 |
+At file: /ex-01-lacos-while.js:230:0 |
 |  1 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  2 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
 |  3 | Ex 02 | ❌ | ❌ | AssertionError: expected false not to be type of 'boolean' |
