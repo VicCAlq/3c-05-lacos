@@ -203,10 +203,10 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-quantidadeImp = 0
+let quantidadeImp = 0
 for (let i = 1; i <= 50; i++) {
   if (i % 2 != 0) {
-    quantidadeImp ++
+    quantidadeImp++
   }
 }
 export const resposta02 = quantidadeImp
