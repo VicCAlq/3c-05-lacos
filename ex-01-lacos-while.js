@@ -297,7 +297,7 @@ while (ajuda2 < nomes.length) {
         novaL.push(nomes[ajuda2])
     }
     console.log(novaL)
-    i++
+    ajuda2++
 }
 
 export const resposta06 = novaL
