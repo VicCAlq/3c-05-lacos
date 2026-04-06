@@ -266,7 +266,7 @@ Armazene o novo array na variável resposta05.
 let izana = []
 for(let c = 0; c < itensDomesticos.length; c++){
    if(itensDomesticos[c][0] === "c"){
-    yuta.push(itensDomesticos[c])
+    izana.push(itensDomesticos[c])
    }
    console.log(izana)
 }
