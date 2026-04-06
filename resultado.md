@@ -1,9 +1,9 @@
-Data de atualização: Dia 05/04/2026 às 21:43:43
+Data de atualização: Dia 06/04/2026 às 07:56:19
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
-| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | quantidadeImp is not defined |
+| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | i is not defined |
 |  1 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  2 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  3 | Ex 01 | ✅ | ✅ | Nenhum erro |
