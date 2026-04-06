@@ -266,12 +266,13 @@ Armazene o novo array na variável resposta05.
 let izana = []
 for(let c = 0; c < itensDomesticos.length; c++){
    if(itensDomesticos[c][0] === "c"){
-    yuta.push(itensDomesticos[c])
+    izana.push(itensDomesticos[c])
    }
    console.log(izana)
 }
 
 export const resposta05 = izana
+
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
