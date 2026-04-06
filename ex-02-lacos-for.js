@@ -190,7 +190,15 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 
-export const resposta01 = false
+let final = 100;
+let acumulador = 0;
+let inicio = 1;
+
+for( let inicio = 1; inicio <= final; inicio = inicio +1) {
+  acumulador += inicio;
+}
+
+export const resposta01 = acumulador
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
@@ -198,7 +206,20 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+/*for (valor inicial do contador; condição para o contador; mudança do contador) {
+  código a ser executado repetidamente
+}*/
+let final = 50;
+let inicio = 1;
+let acumulador = 0;
+
+for (let inicio = 1; inicio <= final; inicio += 1) {
+  if ( inicio % 2 != 0 ) {
+  console.log(inicio);
+}
+}
+
+export const resposta02 = inicio
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -207,7 +228,20 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta03 = false
+
+let inicio = -100;
+let final = -1;
+acumulador = 0;
+
+for (let inicio = -100; inicio <= final; inicio = inicio + 1) {
+   if ( inicio % 2 === 0) {
+    acumulador += inicio;
+   }
+}
+
+console.log(acumulador);
+
+export const resposta03 = acumulador 
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
@@ -215,6 +249,10 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+
+let inicio = 1;
+let final = 200;
+
 
 export const resposta04 = false
 
