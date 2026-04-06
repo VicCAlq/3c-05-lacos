@@ -374,12 +374,12 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-let izana = []
+let yuki = []
 let ajuda6 = 0
 
 while(ajuda6 < nomes.length){
-    if(izana[0] == undefined){
-        izana[0] = nomes[ajuda6]
+    if(yuki[0] == undefined){
+        yuki[0] = nomes[ajuda6]
     }
     else if(nomes[ajuda6].length > izana[0].length){
         izana[0] = nomes[ajuda6]
@@ -388,4 +388,4 @@ while(ajuda6 < nomes.length){
     console.log(izana)
 }
 
-export const resposta10 = izana
+export const resposta10 = yuki
