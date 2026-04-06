@@ -387,4 +387,4 @@ for(let nome of petsExoticos){
     nomeQueComecaComS = "não encontrado"
   }
 }
-export const resposta12 = nomeQueComecaComSosta12 = false
+export const resposta12 = nomeQueComecaComSosta12 
