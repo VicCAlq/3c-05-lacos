@@ -189,8 +189,14 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 (incluindo 100). Armazene o resultado na variável resposta01.
 */
 // Escreva o código da solução abaixo:
+for (let numeros = 0; numeros <= 100; numeros++) {
+  let soma = [];
+  while (numeros <= 100) {
+    soma += numeros;
+  }
+}
 
-export const resposta01 = false
+export const resposta01 = soma;
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
@@ -198,7 +204,15 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 
-export const resposta02 = false
+
+for (let inde = 0; inde <= 50; inde++) {
+  let imapare = [];
+  if(inde % 2 != 0) {
+    impares += inde;
+  }
+  
+}
+export const resposta02 = impares;
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
