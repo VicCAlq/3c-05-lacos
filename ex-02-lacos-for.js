@@ -386,9 +386,9 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
-let comecaComS = false
+let comecaComS = "a"
 for (let item of petsExoticos) {
-  if (item[0] == "s" ) {
+  if (item[0] == "s"  && comecaComS == "a") {
     comecaComS = item
   }
 }
