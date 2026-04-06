@@ -226,34 +226,25 @@ entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
 
-/* Questão 04
-Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
-entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
-*/
+let somaIm = 0
+let k = 1
 
-const numer = [];
-for (let i = 1; i <= 100; i++) {
-  numer.push(i);
-}
-
-let inde = 0;     
-let somaIm = 0;   
-
-while (inde < numer.length) {  
-  if (numer[inde] % 7 === 0) {
-    somaIm += numer[inde];    
+while (k <= 100) {
+  if (k % 7 === 0) {
+    somaIm += k
   }
-  inde++;  
+  k++
 }
 
-export const resposta04 = somaIm;
+export const resposta04 = somaIm
 
 
-// Lista para as questões 5 a 10:
+// Lista base
 const nomes = [
   "Ana", "Bruno", "Carla", "Daniel", "Eduarda", 
   "Fábio", "Gabriela", "Hugo", "Isabela", "João"
 ]
+
 
 /* DICA
 Lembrem-se que para JavaScript, textos são listas de caracteres, e portanto possuem
@@ -267,7 +258,15 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+let resposta05 = []
+let idx1 = nomes.length - 1
+
+while (idx1 >= 0) {
+  resposta05.push(nomes[idx1])
+  idx1--
+}
+
+export { resposta05 }
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -276,23 +275,49 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let resposta06 = []
+let idx2 = 0
 
+while (idx2 < nomes.length) {
+  if (idx2 % 2 === 0) {
+    resposta06.push(nomes[idx2])
+  }
+  idx2++
+}
+
+export { resposta06 }
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta07 = false
+let resposta07 = []
+let idx3 = 0
 
+while (idx3 < nomes.length) {
+  if (nomes[idx3].length <= 5) {
+    resposta07.push(nomes[idx3])
+  }
+  idx3++
+}
+
+export { resposta07 }
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let resposta08 = []
+let idx4 = 0
+
+while (idx4 < nomes.length) {
+  resposta08.push(nomes[idx4].toUpperCase())
+  idx4++
+}
+
+export { resposta08 }
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -301,8 +326,26 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta09 = false
+let resposta09 = []
+let idx5 = 0
 
+while (idx5 < nomes.length) {
+  let primeiraLetra = nomes[idx5][0].toLowerCase()
+
+  if (
+    primeiraLetra === "a" ||
+    primeiraLetra === "e" ||
+    primeiraLetra === "i" ||
+    primeiraLetra === "o" ||
+    primeiraLetra === "u"
+  ) {
+    resposta09.push(nomes[idx5])
+  }
+
+  idx5++
+}
+
+export { resposta09 }
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
 Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
@@ -310,4 +353,14 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-export const resposta10 = false
+let resposta10 = ""
+let idx6 = 0
+
+while (idx6 < nomes.length) {
+  if (nomes[idx6].length > resposta10.length) {
+    resposta10 = nomes[idx6]
+  }
+  idx6++
+}
+
+export { resposta10 }
