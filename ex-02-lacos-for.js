@@ -263,15 +263,15 @@ Armazene o novo array na variável resposta05.
 
 */
 // Escreva o código da solução abaixo:
-let yuta = []
-for(let rika = 0; rika < itensDomesticos.length; rika++){
-   if(itensDomesticos[rika][0] === "c"){
-    yuta.push(itensDomesticos[rika])
+let izana = []
+for(let c = 0; c < itensDomesticos.length; c++){
+   if(itensDomesticos[c][0] === "c"){
+    izana.push(itensDomesticos[c])
    }
-   console.log(yuta)
+   console.log(izana)
 }
 
-export const resposta05 = yuta
+export const resposta05 = izana
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -280,14 +280,14 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-let gojo = []
-for(let geto = 1; geto < itensDomesticos.length; geto += 2){
-  gojo.push(itensDomesticos[geto])
-  console.log(gojo)
+let mikey = []
+for(let draken = 1; draken < itensDomesticos.length; draken += 2){
+  mikey.push(itensDomesticos[draken])
+  console.log(mikey)
 }
 
 
-export const resposta06 = gojo
+export const resposta06 = mikey
 
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
@@ -295,14 +295,14 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-let sukuna = []
-for(let uraume = 0; uraume < itensDomesticos.length; uraume++){
-    if(itensDomesticos[uraume].length > 6){
-        sukuna.push(itensDomesticos[uraume])
+let take = []
+for(let chifuyu = 0; chifuyu < itensDomesticos.length; chifuyu++){
+    if(itensDomesticos[chifuyu].length > 6){
+        take.push(itensDomesticos[chifuyu])
     }
-    console.log(sukuna)
+    console.log(take)
 }
-export const resposta07 = sukuna
+export const resposta07 = take
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
@@ -310,13 +310,13 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-let yuki = []
-for(let todo = 0; todo < itensDomesticos.length; todo++ ){
-  yuki.unshift(itensDomesticos[todo])
-  console.log(yuki)
+let bolinha = []
+for(let cesar = 0; cesar < itensDomesticos.length; cesar++ ){
+  bolinha.unshift(itensDomesticos[cesar])
+  console.log(bolinha)
 }
 
-export const resposta08 = yuki
+export const resposta08 = bolinha
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
@@ -330,13 +330,13 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-let kaiser = []
-for(ness of petsExoticos){
-  kaiser.push(ness.toUpperCase())
-  console.log(kaiser)
+let kisaki = []
+for(hanma of petsExoticos){
+  kisaki.push(hanma.toUpperCase())
+  console.log(kisaki)
 }
 
-export const resposta09 = kaiser
+export const resposta09 = kisaki
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
