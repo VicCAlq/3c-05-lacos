@@ -110,8 +110,8 @@ let indice = 0
 
 while (indice < numeros.length) {
   console.log(numeros[indice])
-  indice = indice + 3
-}
+    indice = indice + 3
+    }
 
 - O código acima imprime os números da lista pulando de 3 em 3 índices
 
@@ -174,14 +174,13 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-
-
-let com = 0;
-let fim = 32;
+let theStart = 0
+let theLast = 32
 let soma = 0;
-while(com <= fim){
-  soma += com
-  com++
+
+while (theStart < theLast) {
+  theStart = theStart + 1;
+   soma = soma + theStart
 }
 export const resposta01 = soma
 
@@ -190,13 +189,19 @@ Utilizando um laço de repetição while, calcule a soma de todos os números í
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let impares = 1; 
-while (impares <= 50){
-  somaImapar += impares;
-  impares += 2;
+let lista = []
+let soma2 = 0
+let i = 0
+while (i < 50) {
+    i++;
+    lista.push(i);
+    if (i % 2 === 1)
+        {
+            soma2 += i;
+        }
+        
 }
-
-export const resposta02 = somaImapar;
+export const resposta02 = soma2
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -205,49 +210,39 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
-indeceParOuPositivo = 0;
-indece = 0;
-while (indice < numeros.length) {
-  let numero = numeros[indice];
-  if (numero < 0){
-    indece++
-  } else{
-    indeceParOuPositivo++ //só para completar a logica;
+let indiceQuestao3 = 0
+let somaQuestao3 = 0
+
+while (indiceQuestao3 < numeros.length) {
+  if (numeros[indiceQuestao3] < 0 ) {
+    somaQuestao3++
   }
+  indiceQuestao3++
 }
 
-export const resposta03 = indece
+export const resposta03 = somaQuestao3
 
 /* Questão 04
 Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
+let indQuestao4 = 0
+let somaQuestao4 = 0
 
-/* Questão 04
-Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
-entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
-*/
+while (indQuestao4 < 100) {
+    indQuestao4++
 
-const numer = [];
-for (let i = 1; i <= 100; i++) {
-  numer.push(i);
+    if (indQuestao4 % 7 == 0) {
+        somaQuestao4 = somaQuestao4 + indQuestao4
+    }
 }
 
-let inde = 0;     
-let somaIm = 0;   
 
-while (inde < numer.length) {  
-  if (numer[inde] % 7 === 0) {
-    somaIm += numer[inde];    
-  }
-  inde++;  
-}
 
-export const resposta04 = somaIm;
 
+export const resposta04 = somaQuestao4
 
 // Lista para as questões 5 a 10:
 const nomes = [
@@ -267,7 +262,17 @@ na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta05 = false
+
+let indiceQuestao5 = nomes.length;
+let novaLista5 = []
+
+while (indiceQuestao5 > 0) {
+    indiceQuestao5--
+    novaLista5.push(nomes[indiceQuestao5])
+    
+}
+
+export const resposta05 = novaLista5
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -276,7 +281,18 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta06 = false
+let indQuestao6 = 0;
+
+let novaLista6 = [];
+
+while (indQuestao6 < nomes.length) {
+  if (indQuestao6 % 2 == 0) {
+    novaLista6.push(nomes[indQuestao6])
+  }
+  indQuestao6++
+}
+
+export const resposta06 = novaLista6
 
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
@@ -284,7 +300,18 @@ que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta07 = false
+let indQuestao7 = nomes.length
+let novaLista7 = []
+
+while (indQuestao7 > 0) {
+    indQuestao7--
+    if (nomes[indQuestao7].length <= 5) {
+        novaLista7.unshift(nomes[indQuestao7])
+    }
+}
+
+
+export const resposta07 = novaLista7
 
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
@@ -292,7 +319,15 @@ escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
 
-export const resposta08 = false
+let indQuestao8 = 0
+let novaLista8 = []
+
+while (indQuestao8 < nomes.length) {
+    novaLista8.push(nomes[indQuestao8].toUpperCase())
+    indQuestao8++
+}
+
+export const resposta08 = novaLista8
 
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
@@ -300,8 +335,19 @@ que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver)
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let indQuestao9 = 0
+let novaLista9 = []
 
-export const resposta09 = false
+while (indQuestao9 < nomes.length) {
+
+    let nomeLido = nomes[indQuestao9]
+    let primeiraLetra = nomeLido[0]
+    if (primeiraLetra == "A" || primeiraLetra == "E" || primeiraLetra == "I" || primeiraLetra == "O" || primeiraLetra == "U") {
+      novaLista9.push(nomeLido)
+    }
+      indQuestao9++
+}
+export const resposta09 = novaLista9
 
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
@@ -309,5 +355,18 @@ Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
 apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável resposta10.
 */
 // Escreva o código da solução abaixo:
+let indQuestao10 = 0
+let nomeDoBom = ""
+let maiorTamanho = 0
 
-export const resposta10 = false
+while (indQuestao10 < nomes.length) {
+    let numeroLido2 = nomes[indQuestao10]
+    if (numeroLido2.length > maiorTamanho) {
+        maiorTamanho = numeroLido2.length
+        nomeDoBom = numeroLido2
+    }
+
+    indQuestao10++
+}
+
+export const resposta10 = nomeDoBom
