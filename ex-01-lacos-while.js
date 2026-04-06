@@ -234,10 +234,11 @@ let indice4 = 0;
 let somaFinal4 = 0;
 while(indice4<=100){
     if(indice4 % 7 == 0){
-        somaFinal4 +=7
+        somaFinal4 += 7
     }
     indice4++
 }
+
 export const resposta04 = somaFinal4
 
 // Lista para as questões 5 a 10:
@@ -257,19 +258,14 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let indice5 = 0
-let indiceReverso = nomes.length - 1
+let indice5 = nomes.length - 1
 let novaArray = []
-while(indice5 <= nomes.length-1){
-    if(nomes[indice5] && indiceReverso >=0){
-        let nome = nomes[indiceReverso]
-        novaArray[indice5] = novaArray.push = nome
-        
-        indiceReverso-=1
-    }
-    
-    indice5++
+while(indice5 >= 0){
+    let nome = nomes[indice5]
+    novaArray.push(nome)
+    indice5--
 }
+
 export const resposta05 = novaArray
 
 /* Questão 06
@@ -280,12 +276,10 @@ Armazene o novo array na variável resposta06.
 // Escreva o código da solução abaixo:
 let indice6 = 0;
 let nomesPares = [];
-let indice7 = 0;
 while(indice6 <= nomes.length - 1){
     if(indice6%2==0){
         let nome = nomes[indice6]
-        nomesPares[indice7] = nomesPares.push = nome
-        indice7++
+        nomesPares.push(nome)
     }
     indice6++  
 }
