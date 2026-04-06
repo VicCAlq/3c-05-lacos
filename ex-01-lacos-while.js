@@ -182,20 +182,21 @@ let soma = 0;
 while(com <= fim){
   soma += com
   com++
+  console.log(soma)
 }
 export const resposta01 = soma
-
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let impares = 1; 
+let impares = 1;
+let somaImpar = 0; 
 while (impares <= 50){
   somaImpar += impares;
   impares += 2;
+  console.log(somaImpar)
 }
-
 export const resposta02 = somaImpar;
 
 /* Questão 03
