@@ -218,7 +218,7 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 let soma2 = 0
-for(i = -100;i<= -1; i++)
+for(let i = -100;i<= -1; i++)
 {
  if (i % 2 == 0) {
   soma2 = soma2 +i
