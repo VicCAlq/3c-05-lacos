@@ -1,4 +1,4 @@
-Data de atualização: Dia 06/04/2026 às 08:16:47
+Data de atualização: Dia 06/04/2026 às 08:30:32
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
@@ -24,4 +24,4 @@ Data de atualização: Dia 06/04/2026 às 08:16:47
 |  9 | Ex 02 | ✅ | ✅ | Nenhum erro |
 | 10 | Ex 02 | ✅ | ✅ | Nenhum erro |
 | 11 | Ex 02 | ✅ | ✅ | Nenhum erro |
-| 12 | Ex 02 | ✅ | ❌ | AssertionError: expected 'serpente' to deeply equal 'sagui' |
+| 12 | Ex 02 | ✅ | ✅ | Nenhum erro |
