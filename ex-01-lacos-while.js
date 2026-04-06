@@ -401,8 +401,19 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
+let vogal = [];
+let indece5 = 0;
+while(indece5 <= 9){
 
-export const resposta09 = false
+  verificação = nomes[indece5].toLowerCase();
+
+  if(verificação == A || E || I || O || U || Á || É || Ó || Í || Ú)
+  {
+     vogal += nomes[indece5];
+  }
+  indece5++;
+}
+export const resposta09 = vogal;
 
 
 /* Questão 10
@@ -413,4 +424,15 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 // Escreva o código da solução abaixo:
 
 
-export const resposta10 = false
+let maior = [];
+let indece6 = 0;
+
+while(indece6 <= 9){
+  if (nomes[indece6].length === 8){
+    maior +=nomes[indece6];
+  }
+
+  indece6++
+}
+
+export const resposta10 = maior;
