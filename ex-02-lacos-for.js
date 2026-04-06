@@ -266,7 +266,7 @@ let listaBomb = []
 
 for (let indice = 0; indice < itensDomesticos.length; indice++) {
   if (itensDomesticos[indice][0] === "c") {
-    listaC.push(itensDomesticos[indice])
+    listaBomb.push(itensDomesticos[indice])
   }
 }
 

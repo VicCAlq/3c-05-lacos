@@ -281,7 +281,7 @@ let nomesi = [];
 
 while (ind2 < nomes.length) {
   if (ind2 % 2 === 0) {
-    par.push(nomes[ind2]);
+    nomesi.push(nomes[ind2]);
   }
   ind2++;
 }
