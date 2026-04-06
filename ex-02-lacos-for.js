@@ -190,7 +190,7 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 let soma1 = 0
-let ind1
+let ind1 = 0
 for (let ind1 = 1; ind1 <= 100; ind1++) {
   soma1 += ind1
 }
@@ -203,14 +203,14 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 let impares = 0
-let ind2
+let ind2 = 0
 for (let ind2 = 1; ind2 <= 50; ind2++) {
   if (ind2 % 2 !== 0) {
     impares++
   }
 }
 
-export const resposta02 = contadorImpares
+export const resposta02 = impares
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
@@ -281,7 +281,7 @@ Armazene o novo array na variável resposta06.
 // Escreva o código da solução abaixo:
 
 let ipIpIMpares = []
-
+indice = 0
 for (let indice = 1; indice < itensDomesticos.length; indice += 2) {
   ipIpIMpares.push(itensDomesticos[indice])
 }
@@ -347,8 +347,8 @@ const petsExoticos = [
 // Escreva o código da solução abaixo:
 
 let contagem = 0
-
-for (let pet of petsExoticos) {
+let pets
+for (let pets of petsExoticos) {
   if (pet.length > 7) {
     contagem++
   }

@@ -194,7 +194,7 @@ let SteelBall = 1
 let Bolsonar = 0
 
 while (SteelBall <= 50) {
-  if (RPdosCria % 2 !== 0) {
+  if (SteelBall % 2 !== 0) {
     Bolsonar += SteelBall
   }
   SteelBall++
