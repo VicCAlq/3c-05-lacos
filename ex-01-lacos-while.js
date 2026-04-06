@@ -357,5 +357,5 @@ while(indiceQuestao10 <= nomes.length-1){
   }
   indiceQuestao10++
 }
-
+export const resposta10 = maiorNome
 export const resposta10 = maiorNomeexport 
