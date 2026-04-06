@@ -190,7 +190,7 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 let somaCem = 0
-for(i = 0; i <= 100; i++){
+for(let i = 0; i <= 100; i++){
   somaCem += i
 }
 export const resposta01 = somaCem
@@ -201,7 +201,7 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 let numeroImpar = 0
-for(i = 0; i <= 50; i++){
+for(let i = 0; i <= 50; i++){
   if(i % 2 != 0){
     numeroImpar++
   }
@@ -215,7 +215,7 @@ variável resposta03.
 */
 // Escreva o código da solução abaixo:
 let somaNegativos = 0
-for(i = -100; i <= -1; i++){
+for(let i = -100; i <= -1; i++){
   if(i % 2 == 0){
     somaNegativos+= i
   }
