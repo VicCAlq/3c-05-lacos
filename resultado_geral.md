@@ -1,42 +1,43 @@
-Data de atualização: Dia 06/04/2026 às 08:32:42
+Data de atualização: Dia 07/04/2026 às 15:27:05
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
 |-------|---------------------------------|------------|
-| elomorais2 | 0 | 0.00 |
-| pabloalves1230 | 7 | 50.67 |
-| luiz-simoes-nave | 0 | 0.00 |
-| Alice Marchi | 12 | 81.33 |
-| calebesilva09 | 0 | 0.00 |
-| gabrielomailoko16 | 9 | 61.33 |
-| beatriz carneiro | 22 | 100.00 |
-| RenanOruim01 | 22 | 100.00 |
-| lynkpoRK24 | 0 | 0.00 |
-| alissondogera | 9 | 61.33 |
-| antoniodoib | 0 | 0.00 |
-| samuel-ete | 15 | 100.00 |
-| tiu10ney | 0 | 0.00 |
-| dody-rawenx | 0 | 0.00 |
-| felipecunha1227 | 0 | 0.00 |
-| edu-mourazx | 0 | 0.00 |
-| guilherme-moura-gui7x | 22 | 100.00 |
-| lerolens | 0 | 0.00 |
-| manuusiq24 | 0 | 0.00 |
-| Evertonmts | 0 | 0.00 |
-| angelochef | 0 | 0.00 |
-| dollynhoVencido | 1 | 6.67 |
-| CHRIS1SD3AD | 19 | 100.00 |
-| willyv00 | 0 | 0.00 |
-| Abraao2025 | 0 | 0.00 |
-| Yggdrasil-Lrss | 10 | 66.67 |
-| vanuty-7 | 0 | 0.00 |
-| calazansomestre | 0 | 0.00 |
-| thaissilva-tech | 0 | 0.00 |
-| rayRayanjoS | 0 | 0.00 |
-| JonhPerter07 | 0 | 0.00 |
-| marapessoa06 | 0 | 0.00 |
-| Gustapogomes | 0 | 0.00 |
-| lucas4c3r0l4 | 0 | 0.00 |
-| llaurapx | 9 | 61.33 |
-| kauasantos-commits | 0 | 0.00 |
-| luhllu08 | 0 | 0.00 |
+| Abraão Domingos (Abraao2025) | 0 | 0.00 |
+| Alice Marchi (Alice-Marchi) | 12 | 81.33 |
+| Alisson Santana (alissondogera) | 9 | 61.33 |
+| Angelo Davy (angelochef) | 0 | 0.00 |
+| Antonio Fernando (antoniodoib) | 0 | 0.00 |
+| Beatriz Carneiro (beatriz-carneiro) | 22 | 100.00 |
+| Calebe Aubertino (calebesilva09) | 0 | 0.00 |
+| Carlos Felipe (felipecunha1227) | 0 | 0.00 |
+| Cauã Juan (tiu10ney) | 22 | 100.00 |
+| Daniela Alves (dody-rawenx) | 0 | 0.00 |
+| Elyson França (dollynhoVencido) | 15 | 100.00 |
+| Everton Rodrigues (Evertonmts) | 0 | 0.00 |
+| Fernanda Vanuty (vanuty-7) | 0 | 0.00 |
+| Gabriel Henrique (gabrielomailoko16) | 9 | 61.33 |
+| Guilherme Moura (guilherme-moura-gui7x) | 22 | 100.00 |
+| Gustavo Gomes (Gustapogomes) | 22 | 100.00 |
+| Helena Evelyn (lerolens) | 22 | 100.00 |
+| Izabella Cristine (CHRIS1SD3AD) | 21 | 100.00 |
+| João Eduardo (edu-mourazx) | 0 | 0.00 |
+| João Pedro (JonhPerter07) | 0 | 0.00 |
+| José Guilherme Calazans (calazansomestre) | 0 | 0.00 |
+| Kauã Santos (kauasantos-commits) | 0 | 0.00 |
+| Laura Elizabete (llaurapx) | 22 | 100.00 |
+| Leonardo Aragão (lynkpoRK24) | 0 | 0.00 |
+| Lucas Carson (lucas4c3r0l4) | 0 | 0.00 |
+| Lucas Renato (Yggdrasil-Lrss) | 22 | 100.00 |
+| Luiz Gustavo Simões (luiz-simoes-nave) | 0 | 0.00 |
+| Manuella Siqueira (manuusiq24) | 0 | 0.00 |
+| Manuella Siqueira (manyusiq) | 0 | 0.00 |
+| Maria Eloiza (elomorais2) | 0 | 0.00 |
+| Maria Luisa (luhllu08) | 19 | 100.00 |
+| Pablo Alves (pabloalves1230) | 7 | 50.67 |
+| Pedro Renan (RenanOruim01) | 22 | 100.00 |
+| Rayane Fabiane (rayRayanjoS) | 22 | 100.00 |
+| Samara Pessoa (marapessoa06) | 15 | 100.00 |
+| Samuel Guilherme (samuel-ete) | 15 | 100.00 |
+| Thais Tavares (thaissilva-tech) | 0 | 0.00 |
+| Williane Vitoria (willyv00) | 9 | 61.33 |
