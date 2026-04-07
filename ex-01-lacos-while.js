@@ -169,10 +169,9 @@ Questões 01 a 10: Exercícios com laços de repetição do tipo "While"
 MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 7 questões
 */
 
-Questões 01 a 10: Exercícios com laços de repetição do tipo "While"
+//Questões 01 a 10: Exercícios com laços de repetição do tipo "While"
 
-MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 7 questões
-*/
+//MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 7 questões
 
 /* Questão 01
 Crie um laço de repetição while que armazene em uma variável a soma dos números

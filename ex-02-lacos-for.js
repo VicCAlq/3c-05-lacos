@@ -184,10 +184,9 @@ Questões 01 a 12: Exercícios com laços de repetição do tipo "For"
 MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 8 questões
 */
 
-Questões 01 a 12: Exercícios com laços de repetição do tipo "For"
+//Questões 01 a 12: Exercícios com laços de repetição do tipo "For"
 
-MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 8 questões
-*/
+//MÍNIMO NECESSÁRIO PARA NOTA MÁXIMA: 8 questões
 
 /* Questão 01
 Utilizando um laço de repetição for, calcule a soma de todos os números de 1 a 100
@@ -197,7 +196,7 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 let soma = 0
 for(let contador = 0; contador <= 100; contador++){
   soma += contador
-  console.log(soma)
+  //console.log(soma)
 }
 
 export const resposta01 = soma
@@ -212,7 +211,7 @@ for(let a = 0; a <= 50; a++){
   if(a % 2 !== 0){
     quantidade++
   }
-  console.log(quantidade)
+  //console.log(quantidade)
 }
 export const resposta02 = quantidade
 
@@ -227,7 +226,7 @@ for(let b = -100; b <= -1; b++){
   if(b % 2 === 0){
     somma += b
   }
-  console.log(somma)
+  //console.log(somma)
 }
 
 export const resposta03 = somma
@@ -249,7 +248,7 @@ for(let c = 1; c <= 200; c++){
 }
 
 media = cima/baixo
-console.log(media)
+//console.log(media)
 
 
 export const resposta04 = media
@@ -273,7 +272,7 @@ for(let c = 0; c < itensDomesticos.length; c++){
    if(itensDomesticos[c][0] === "c"){
     izana.push(itensDomesticos[c])
    }
-   console.log(izana)
+   //console.log(izana)
 }
 
 export const resposta05 = izana
@@ -288,7 +287,7 @@ Armazene o novo array na variável resposta06.
 let mikey = []
 for(let draken = 1; draken < itensDomesticos.length; draken += 2){
   mikey.push(itensDomesticos[draken])
-  console.log(mikey)
+  //console.log(mikey)
 }
 
 
@@ -305,7 +304,7 @@ for(let chifuyu = 0; chifuyu < itensDomesticos.length; chifuyu++){
     if(itensDomesticos[chifuyu].length > 6){
         take.push(itensDomesticos[chifuyu])
     }
-    console.log(take)
+    //console.log(take)
 }
 export const resposta07 = take
 
@@ -318,7 +317,7 @@ o novo array na variável resposta08.
 let bolinha = []
 for(let cesar = 0; cesar < itensDomesticos.length; cesar++ ){
   bolinha.unshift(itensDomesticos[cesar])
-  console.log(bolinha)
+  //console.log(bolinha)
 }
 
 export const resposta08 = bolinha
@@ -336,9 +335,9 @@ novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 let kisaki = []
-for(hanma of petsExoticos){
+for(let hanma of petsExoticos){
   kisaki.push(hanma.toUpperCase())
-  console.log(kisaki)
+  //console.log(kisaki)
 }
 
 export const resposta09 = kisaki
@@ -356,11 +355,11 @@ const petsExoticos = [
 // Escreva o código da solução abaixo:
 
 let nagi = []
-for(reo of petsExoticos){
+for(let reo of petsExoticos){
   if(reo.includes("r")){
     nagi.push(reo)
   }
-  console.log(nagi)
+  //console.log(nagi)
 }
 
 export const resposta10 = nagi
@@ -377,7 +376,7 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 let sae = 0
-for(rin of petsExoticos){
+for(let rin of petsExoticos){
   if(rin.length > 7){
     sae++
   }
@@ -398,11 +397,11 @@ const petsExoticos = [
 */
 // Escreva o código da solução abaixo:
 let r = "não encontrado"
-for(h of petsExoticos){
+for(let h of petsExoticos){
   if(h[0] === "s" && r === "não encontrado"){
     r = h
   }
-  console.log(r)
+ // console.log(r)
 }
 
 export const resposta12 = r
