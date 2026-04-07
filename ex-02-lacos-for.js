@@ -260,15 +260,15 @@ Armazene o novo array na variável resposta05.
 */
 // Escreva o código da solução abaixo:
 
-let listaBomb = []
+let listaC = []
+
 
 for (let i = 0; i < itensDomesticos.length; i++) {
-  if (itensDomesticos[i][0] === "c") {
-    listaBomb.push(itensDomesticos[i])
+ if (itensDomesticos[i][0] === "c") {
+listaC.push(itensDomesticos[i])
   }
 }
-
-export const resposta05 = listaBomb
+export const resposta05 = listaC
 
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
@@ -278,13 +278,16 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-let ipIpIMpares = []
-let indice1 = 0
-for (let indice1 = 1; indice1 < itensDomesticos.length; indice1 += 2) {
-  ipIpIMpares.push(itensDomesticos[indice1])
-}
+let listaImpar = []
+let indImpar2 = 1
 
-export const resposta06 = ipIpIMpares
+
+while(indImpar2 < itensDomesticos.length) {
+  listaImpar.push(itensDomesticos[indImpar2])
+  indImpar2 += 2
+}
+export const resposta06 = listaImpar
+
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
