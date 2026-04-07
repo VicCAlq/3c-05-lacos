@@ -1,4 +1,4 @@
-Data de atualização: Dia 06/04/2026 às 08:31:39
+Data de atualização: Dia 07/04/2026 às 15:25:02
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
@@ -7,8 +7,8 @@ Data de atualização: Dia 06/04/2026 às 08:31:39
 |  2 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  3 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  4 | Ex 01 | ✅ | ❌ | AssertionError: expected 105 to deeply equal 735 |
-|  5 | Ex 01 | ✅ | ❌ | AssertionError: expected [ Array(10) ] to deeply equal [ 'João', 'Isabela', 'Hugo', …(7) ] |
-|  6 | Ex 01 | ✅ | ❌ | AssertionError: expected [ Array(5) ] to deeply equal [ 'Ana', 'Carla', 'Eduarda', …(2) ] |
+|  5 | Ex 01 | ✅ | ✅ | Nenhum erro |
+|  6 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  7 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  8 | Ex 01 | ✅ | ✅ | Nenhum erro |
 |  9 | Ex 01 | ✅ | ✅ | Nenhum erro |
