@@ -190,9 +190,8 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 let soma1 = 0
-let ind1 = 0
-for (let ind1 = 1; ind1 <= 100; ind1++) {
-  soma1 += ind1
+for (let i = 1; i <= 100; i++) {
+soma1 += i
 }
 
 export const resposta01 = soma1
@@ -203,9 +202,8 @@ Utilizando um laço de repetição for, calcule quantos números ímpares existe
 */
 // Escreva o código da solução abaixo:
 let impares = 0
-let ind2 = 0
-for (let ind2 = 1; ind2 <= 50; ind2++) {
-  if (ind2 % 2 !== 0) {
+for (let i= 1; i <= 50; i++) {
+  if (i % 2 !== 0) {
     impares++
   }
 }
@@ -221,9 +219,9 @@ variável resposta03.
 
 let somaNegativos = 0
 
-for (let numero = -100; numero <= -1; numero++) {
-  if (numero % 2 === 0) {
-    somaNegativos += numero
+for (let i = -100; i <= -1; i++) {
+if (i % 2 === 0) {
+somaNegativos += i
   }
 }
 
@@ -239,13 +237,13 @@ múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 let somaMultiplos = 0
 let quantidade = 0
 
-for (let numero = 1; numero <= 200; numero++) {
-  if (numero % 3 === 0) {
-    somaMultiplos += numero
+for (let i = 1; i <= 200; i++) {
+  if (i % 3 === 0) {
+    somaMultiplos += i
     quantidade++
   }
 }
-export const resposta04 =  quantidade
+export const resposta04 = somaMultiplos
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
@@ -264,9 +262,9 @@ Armazene o novo array na variável resposta05.
 
 let listaBomb = []
 
-for (let indice = 0; indice < itensDomesticos.length; indice++) {
-  if (itensDomesticos[indice][0] === "c") {
-    listaBomb.push(itensDomesticos[indice])
+for (let i = 0; i < itensDomesticos.length; i++) {
+  if (itensDomesticos[i][0] === "c") {
+    listaBomb.push(itensDomesticos[i])
   }
 }
 
@@ -281,9 +279,9 @@ Armazene o novo array na variável resposta06.
 // Escreva o código da solução abaixo:
 
 let ipIpIMpares = []
-indice = 0
-for (let indice = 1; indice < itensDomesticos.length; indice += 2) {
-  ipIpIMpares.push(itensDomesticos[indice])
+let indice1 = 0
+for (let indice1 = 1; indice1 < itensDomesticos.length; indice1 += 2) {
+  ipIpIMpares.push(itensDomesticos[indice1])
 }
 
 export const resposta06 = ipIpIMpares
@@ -293,8 +291,16 @@ para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
+let itensLatinos = []
 
-export const resposta07 = false
+
+for (let i = 0; i < itensDomesticos.length; i++) {
+if (itensDomesticos[i].length > 6) {
+itensLatinos.push(itensDomesticos[i])
+}
+}
+
+export const resposta07 = itensLatinos
 
 /* Questão 08
 Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
@@ -302,8 +308,14 @@ Finalizando com a lista de itens domésticos abaixo, use um laço de repetição
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
+let gode = []
 
-export const resposta08 = false
+
+for (let i = itensDomesticos.length - 1; i >= 0; i--) {
+gode.push(itensDomesticos[i])
+}
+
+export const resposta08 = gode
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
@@ -317,8 +329,14 @@ para criar um novo array contendo todos os nomes em letras maiúsculas. Armazene
 novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
+let petsMaiusculos = []
 
-export const resposta09 = false
+
+for (let pet of petsExoticos) {
+petsMaiusculos.push(pet.toUpperCase())
+}
+
+export const resposta09 = petsMaiusculos
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
@@ -331,8 +349,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
+for (let pet of petsExoticos) {
+if (pet.includes("r")) {
+petsComR.push(pet)
+}
+}
 
-export const resposta10 = false
+export const resposta10 = petsComR
 
 /* Questão 11
 Continuando com a lista de pets exóticos, use um laço de repetição for...of para
