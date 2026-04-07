@@ -1,9 +1,9 @@
-Data de atualização: Dia 06/04/2026 às 08:30:12
+Data de atualização: Dia 07/04/2026 às 15:26:25
  
 
 | Questão | Exercício | Entregue | Correto | Mensagem de Erro |
 |---------|-----------|----------|---------|------------------|
-| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | indice is not defined |
+| ❌❌❌ | Ex 2 | ❌❌❌ | ❌❌❌ | petsComR is not defined |
 |  1 | Ex 01 | ✅ | ❌ | AssertionError: expected 561 to deeply equal 528 |
 |  2 | Ex 01 | ✅ | ❌ | AssertionError: expected 51 to deeply equal 625 |
 |  3 | Ex 01 | ✅ | ❌ | AssertionError: expected +0 to deeply equal 6 |
