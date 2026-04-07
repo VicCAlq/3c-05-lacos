@@ -371,7 +371,7 @@ const petsExoticos = [
 
 let contagem = 0
 let pets
-for (let pets of petsExoticos) {
+for (let pet of petsExoticos) {
   if (pet.length > 7) {
     contagem++
   }
