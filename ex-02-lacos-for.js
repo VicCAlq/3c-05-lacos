@@ -190,76 +190,90 @@ Utilizando um laço de repetição for, calcule a soma de todos os números de 1
 */
 // Escreva o código da solução abaixo:
 let soma1 = 0
+
+
 for (let i = 1; i <= 100; i++) {
 soma1 += i
 }
-
 export const resposta01 = soma1
+
+
+
 
 /* Questão 02
 Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
 1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let impares = 0
-for (let i= 1; i <= 50; i++) {
-  if (i % 2 !== 0) {
-    impares++
-  }
-}
+let contadorImpar = 0
 
-export const resposta02 = impares
+
+for (let i = 1; i <= 50; i++) {
+if (i % 2 !== 0) {
+contadorImpar++
+}
+}
+export const resposta02 = contadorImpar
+
+
+
 
 /* Questão 03
 Utilizando um laço de repetição for, calcule a soma de todos os números pares
-negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na 
+negativos entre -100 e -1 (incluindo o -100). Armazene o resultado na
 variável resposta03.
 */
 // Escreva o código da solução abaixo:
+let somaParesNegativos = 0
 
-let somaNegativos = 0
 
 for (let i = -100; i <= -1; i++) {
 if (i % 2 === 0) {
-somaNegativos += i
-  }
+somaParesNegativos += i
 }
+}
+export const resposta03 = somaParesNegativos
 
-export const resposta03 = somaNegativos
+
+
 
 /* Questão 04
 Utilizando um laço de repetição for, calcule a média aritmética de todos os números
-múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado 
+múltiplos de 3 entre 1 e 200 (incluindo os limites). Armazene o resultado
 (pode ser decimal) na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-
 let somaMultiplos = 0
 let quantidade = 0
 
+
 for (let i = 1; i <= 200; i++) {
-  if (i % 3 === 0) {
-    somaMultiplos += i
-    quantidade++
-  }
+if (i % 3 === 0) {
+somaMultiplos += i
+quantidade++
 }
-export const resposta04 = somaMultiplos
+}
+export const resposta04 = somaMultiplos / quantidade
+
+
+
 
 // Lista para as questões 5 a 8:
 const itensDomesticos = [
-  "mesa", "cadeira", "sofá", "cortina", "tapete", 
+  "mesa", "cadeira", "sofá", "cortina", "tapete",
   "abajur", "copo", "prato", "panela", "cafeteira",
   "espelho", "quadro", "vaso", "relógio", "almofada"
 ]
+
 
 /* Questão 05
 Dada a lista de itens domésticos acima, utilize um laço de repetição for (com contador)
 para criar um novo array contendo todos os itens que começam com a letra "c".
 Armazene o novo array na variável resposta05.
 
+
 */
 // Escreva o código da solução abaixo:
-
 let listaC = []
 
 
@@ -270,6 +284,7 @@ listaC.push(itensDomesticos[i])
 }
 export const resposta05 = listaC
 
+
 /* Questão 06
 Utilizando a mesma lista de itens domésticos da questão anterior, use um laço de
 repetição for (com contador) para criar um novo array contendo apenas os itens que
@@ -277,7 +292,6 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-
 let listaImpar = []
 let indImpar2 = 1
 
@@ -288,43 +302,51 @@ while(indImpar2 < itensDomesticos.length) {
 }
 export const resposta06 = listaImpar
 
+
+
+
 /* Questão 07
 Seguindo com a lista de itens domésticos, use um laço de repetição for (com contador)
 para criar um novo array contendo os itens com mais de 6 letras. Armazene o novo array
 na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-let itensLatinos = []
+let itensL = []
 
 
 for (let i = 0; i < itensDomesticos.length; i++) {
 if (itensDomesticos[i].length > 6) {
-itensLatinos.push(itensDomesticos[i])
+itensL.push(itensDomesticos[i])
 }
 }
+export const resposta07 = itensL
 
-export const resposta07 = itensLatinos
+
+
 
 /* Questão 08
-Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for 
-(com contador) para criar um novo array contendo os itens em ordem reversa. Armazene 
+Finalizando com a lista de itens domésticos abaixo, use um laço de repetição for
+(com contador) para criar um novo array contendo os itens em ordem reversa. Armazene
 o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-let gode = []
+let reverse = []
 
 
 for (let i = itensDomesticos.length - 1; i >= 0; i--) {
-gode.push(itensDomesticos[i])
+reverse.push(itensDomesticos[i])
 }
+export const resposta08 = reverse
 
-export const resposta08 = gode
+
+
 
 // Lista para as questões 5 a 10:
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
 ]
+
 
 /* Questão 09
 Dada a lista de nomes de pets exóticos acima, utilize um laço de repetição for...of
@@ -338,69 +360,78 @@ let petsMaiusculos = []
 for (let pet of petsExoticos) {
 petsMaiusculos.push(pet.toUpperCase())
 }
-
 export const resposta09 = petsMaiusculos
+
+
+
 
 /* Questão 10
 Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
 criar um novo array contendo apenas os nomes que possuem a letra "r" em qualquer posição.
 Armazene o novo array na variável resposta10.
 
+
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
 ]
 */
 // Escreva o código da solução abaixo:
-for (let pet of petsExoticos) {
-if (pet.includes("r")) {
-petsComR.push(pet)
-}
-}
+let petsComR = []
 
+
+for (let pet of petsExoticos) {
+  if (pet.includes("r"))
+    petsComR.push(pet)
+}
 export const resposta10 = petsComR
+
+
+
 
 /* Questão 11
 Continuando com a lista de pets exóticos, use um laço de repetição for...of para
 contar quantos nomes têm mais de 7 letras. Armazene a quantidade encontrada na
 variável resposta11.
 
+
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
 ]
 */
 // Escreva o código da solução abaixo:
+let contadorL = 0
 
-let contagem = 0
-let pets
+
 for (let pet of petsExoticos) {
-  if (pet.length > 7) {
-    contagem++
-  }
+if (pet.length > 7) {
+contadorL++
 }
+}
+export const resposta11 = contadorL
 
-export const resposta11 = contagem
 
 /* Questão 12
 Encerrando com a lista de pets exóticos, use um laço de repetição for...of para
 encontrar o primeiro nome que começa com a letra "s". Se encontrar, armazene este
 nome na variável resposta12. Se não encontrar nenhum, armazene a string "não encontrado".
 
+
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
 ]
 */
 // Escreva o código da solução abaixo:
-
 let encontrado = "não encontrado"
 
-for (let pet of petsExoticos) {
-  if (pet[0] === "s") {
-    encontrado = pet
-    break
-  }
-}
 
+for (let pet of petsExoticos) {
+if (pet[0] === "s") {
+encontrado = pet
+break
+}
+}
 export const resposta12 = encontrado
+

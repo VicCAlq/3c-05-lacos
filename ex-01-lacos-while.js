@@ -174,33 +174,30 @@ Crie um laço de repetição while que armazene em uma variável a soma dos núm
 de 1 a 32. Envie o valor resultante na variável resposta01.
 */
 // Escreva o código da solução abaixo:
-let numerosBabao = 32
-let primeiro = 0
-let soma = 0
-
-while (primeiro <= numerosBabao) {
-  primeiro += 1
-  soma = soma += primeiro
+let com = 0;
+let fim = 32;
+let soma = 0;
+while(com <= fim){
+  soma += com
+  com++
 }
-console.log(soma)
 export const resposta01 = soma
+
 
 /* Questão 02
 Utilizando um laço de repetição while, calcule a soma de todos os números ímpares
 de 1 até 50 (incluindo 50). Armazene o resultado da soma na variável resposta02.
 */
 // Escreva o código da solução abaixo:
-let SteelBall = 1
-let Bolsonar = 0
+let impar = 1;
+let somaImpar = 0;
 
-while (SteelBall <= 50) {
-  if (SteelBall % 2 !== 0) {
-    Bolsonar += SteelBall
-  }
-  SteelBall++
+while (impar <= 50) {
+  somaImpar += impar;
+  impar += 2;
 }
 
-export const resposta02 = SteelBall
+export const resposta02 = somaImpar;
 
 /* Questão 03
 Crie um laço de repetição while que conte quantos números negativos existem no
@@ -209,47 +206,68 @@ array abaixo. Armazene a quantidade encontrada na variável resposta03.
 const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 */
 // Escreva o código da solução abaixo:
-const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2]
 
-let numero1 = 0
-let contadorNegg = 0
 
-while (numero1 < numeros.length) {
-  if (numeros[contadorNegg] < 0) {
-    contadorNegg++
+const numeros = [15, -3, 8, -12, 0, -7, 22, -1, 9, -5, 18, -2];
+
+
+let ind = 0;
+let negativos = 0;
+
+
+while (ind < numeros.length) {
+  if (numeros[ind] < 0) {
+    negativos++;
   }
-  numero1++
+  ind++;
 }
-export const resposta03 = contadorNegg
+
+
+export const resposta03 = negativos;
+
 
 /* Questão 04
-Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7 
+Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7
 entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
 */
 // Escreva o código da solução abaixo:
-let numeri = 1;
+
+
+/* Questão 04
+Utilizando um laço de repetição while, faça a soma de todos os múltiplos de 7
+entre 1 e 100 (incluindo 100). Armazene o resultado na variável resposta04.
+*/
+
+
+let number = 1;
 let somaMultiplos = 0;
 
 
-while (numeri <= 100) {
-  if (numeri % 7 === 0) {
-    somaMultiplos += numeri;
+while (number <= 100) {
+  if (number % 7 === 0) {
+    somaMultiplos += number;
   }
-  numeri++;
+  number++;
 }
 
-export const resposta04 = somaMultiplos
+
+export const resposta04 = somaMultiplos;
+
+
+
 
 // Lista para as questões 5 a 10:
 const nomes = [
-  "Ana", "Bruno", "Carla", "Daniel", "Eduarda", 
+  "Ana", "Bruno", "Carla", "Daniel", "Eduarda",
   "Fábio", "Gabriela", "Hugo", "Isabela", "João"
 ]
+
 
 /* DICA
 Lembrem-se que para JavaScript, textos são listas de caracteres, e portanto possuem
 as mesmas propriedades de índices e comprimento (length)
 */
+
 
 /* Questão 05
 Dada a lista de nomes acima, utilize um laço de repetição while para criar um
@@ -257,16 +275,18 @@ novo array contendo a mesma lista, mas em ordem reversa. Armazene o novo array
 na variável resposta05.
 */
 // Escreva o código da solução abaixo:
-let ind = nomes.length - 1;
-let reverte = [];
+let ind2 = nomes.length - 1;
+let reverse = [];
 
 
-while (ind >= 0) {
-  reverte.push(nomes[ind]);
-  ind--;
+while (ind2 >= 0) {
+  reverse.push(nomes[ind2]);
+  ind2--;
 }
 
-export const resposta05 = reverte
+
+export const resposta05 = reverse;
+
 
 /* Questão 06
 Utilizando a mesma lista de nomes da questão anterior, crie um novo array contendo
@@ -275,79 +295,84 @@ Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
 
-let ind2 = 0;
-let nomesi = [];
+
+let ind3 = 0;
+let par = [];
 
 
-while (ind2 < nomes.length) {
-  if (ind2 % 2 === 0) {
-    nomesi.push(nomes[ind2]);
+while (ind3 < nomes.length) {
+  if (ind3 % 2 === 0) {
+    par.push(nomes[ind3]);
   }
-  ind2++;
+  ind3++;
 }
 
-export const resposta06 = nomesi;
 
-
+export const resposta06 = par;
 /* Questão 07
 Continuando com a lista de nomes, crie um novo array contendo apenas os nomes
 que possuem 5 letras ou menos. Armazene o novo array na variável resposta07.
 */
 // Escreva o código da solução abaixo:
-let ind3 = 0;
+
+
+let ind4 = 0;
 let curtos = [];
 
 
-while (ind3 < nomes.length) {
-  if (nomes[ind3].length <= 5) {
-    curtos.push(nomes[ind3]);
+while (ind4 < nomes.length) {
+  if (nomes[ind4].length <= 5) {
+    curtos.push(nomes[ind4]);
   }
-  ind3++;
+  ind4++;
 }
 
-export const resposta07 = curtos
 
+export const resposta07 = curtos;
 /* Questão 08
 Ainda com a lista de nomes, crie um novo array onde todos os nomes estejam
 escritos em letras maiúsculas. Armazene o novo array na variável resposta08.
 */
 // Escreva o código da solução abaixo:
-let assai = 0;
+
+
+let ind5 = 0;
 let maiusculos = [];
 
 
-while (assai < nomes.length) {
-  maiusculos.push(nomes[assai].toUpperCase());
-  assai++;
+while (ind5 < nomes.length) {
+  maiusculos.push(nomes[ind5].toUpperCase());
+  ind5++;
 }
 
 
-export const resposta08 = maiusculos
-
+export const resposta08 = maiusculos;
 /* Questão 09
 Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
 que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver).
 Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
-let boig = 0;
+
+
+let ind6 = 0;
 let vogais = [];
 
 
-while (boig < nomes.length) {
-  let primeiraLetra = nomes[boig][0].toLowerCase();
+while (ind6 < nomes.length) {
+  let primeiraLetra = nomes[ind6][0].toLowerCase();
 
 
   if ("aeiouáéíóú".includes(primeiraLetra)) {
-    vogais.push(nomes[boig]);
+    vogais.push(nomes[ind6]);
   }
 
 
-  boig++;
+  ind6++;
 }
 
-export const resposta09 = vogais
 
+export const resposta09 = vogais;
 /* Questão 10
 Finalizando com a lista de nomes, encontre o nome mais longo da lista.
 Se houver empate (mais de um nome com o mesmo comprimento máximo), armazene
@@ -355,15 +380,16 @@ apenas o primeiro que aparecer na lista. Coloque o nome encontrado na variável 
 */
 // Escreva o código da solução abaixo:
 
-let yoyomah = 0;
+
+let ind7 = 0;
 let maiorNome = "";
 
 
-while (yoyomah < nomes.length) {
-  if (nomes[yoyomah].length > maiorNome.length) {
-    maiorNome = nomes[yoyomah];
+while (ind7 < nomes.length) {
+  if (nomes[ind7].length > maiorNome.length) {
+    maiorNome = nomes[ind7];
   }
-  yoyomah++;
+  ind7++;
 }
 
 
