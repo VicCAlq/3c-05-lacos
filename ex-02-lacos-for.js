@@ -263,9 +263,9 @@ Armazene o novo array na variável resposta05.
 let listaC = []
 
 for (let i = 0; i < itensDomesticos.length; i++) {
-if (itensDomesticos[i][0] === "c") {
+ if (itensDomesticos[i][0] === "c") {
 listaC.push(itensDomesticos[i])
-}
+  }
 }
 export const resposta05 = listaC
 
@@ -276,12 +276,14 @@ estão nos índices ímpares da lista original (índices 1, 3, 5, 7, 9, 11, 13).
 Armazene o novo array na variável resposta06.
 */
 // Escreva o código da solução abaixo:
-let indImpar = []
+let listaImpar = []
+let indImpar2 = 1
 
-for (let i = 1; i < itensDomesticos.length; i += 2) {
-indImpar.push(itensDomesticos[i])
+while(indImpar2 < itensDomesticos.length) {
+  listaImpar.push(itensDomesticos[indImpar2])
+  indImpar2 += 2
 }
-export const resposta06 = indImpar
+export const resposta06 = listaImpar
 
 
 /* Questão 07
@@ -345,13 +347,13 @@ const petsExoticos = [
 ]
 */
 // Escreva o código da solução abaixo:
+let petsComR = []
+
 for (let pet of petsExoticos) {
-if (pet.includes("r")) {
-petsComR.push(pet)
-}
+  if (pet.includes("r"))
+    petsComR.push(pet)
 }
 export const resposta10 = petsComR
-
 
 
 /* Questão 11
