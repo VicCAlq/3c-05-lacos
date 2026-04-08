@@ -422,13 +422,13 @@ const petsExoticos = [
 // Escreva o código da solução abaixo:
 
 
-let resposta12 = "não encontrado."
+let resp12 = "não encontrado."
 const letraS = "s";
 
 for(const petComS of petsExoticos) {
    if (petComS.startsWith(letraS))  {
-    resposta12 = petComS
+    resp12 = petComS
     break
 }
 }
-export const resposta12 = resposta12
+export const resposta12 = resp12
