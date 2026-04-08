@@ -393,7 +393,7 @@ Armazene o novo array na variável resposta09.
 */
 // Escreva o código da solução abaixo:
 
-onst nomesComVogais = []
+const nomesComVogais = []
 let indice9 = 0
 const vogais = ["A","E","I","O","U"]
 
