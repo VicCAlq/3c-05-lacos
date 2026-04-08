@@ -1,4 +1,4 @@
-Data de atualização: Dia 07/04/2026 às 15:27:05
+Data de atualização: Dia 08/04/2026 às 14:40:31
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
@@ -34,10 +34,10 @@ Data de atualização: Dia 07/04/2026 às 15:27:05
 | Manuella Siqueira (manyusiq) | 0 | 0.00 |
 | Maria Eloiza (elomorais2) | 0 | 0.00 |
 | Maria Luisa (luhllu08) | 19 | 100.00 |
-| Pablo Alves (pabloalves1230) | 7 | 50.67 |
+| Pablo Alves (pabloalves1230) | 22 | 100.00 |
 | Pedro Renan (RenanOruim01) | 22 | 100.00 |
 | Rayane Fabiane (rayRayanjoS) | 22 | 100.00 |
 | Samara Pessoa (marapessoa06) | 15 | 100.00 |
 | Samuel Guilherme (samuel-ete) | 15 | 100.00 |
-| Thais Tavares (thaissilva-tech) | 0 | 0.00 |
+| Thais Tavares (thaissilva-tech) | 19 | 100.00 |
 | Williane Vitoria (willyv00) | 9 | 61.33 |
