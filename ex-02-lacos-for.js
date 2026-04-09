@@ -315,7 +315,7 @@ na variável resposta07.
 */
 // Escreva o código da solução abaixo:
 const itensLongos = [];
-indice7 = 0
+let indice7 = 0
 
 for( let indice7 = 0; indice7 < itensDomesticos.length; indice7 += 1) {
 if(itensDomesticos[indice7].length > 6) {
