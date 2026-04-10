@@ -1,4 +1,4 @@
-Data de atualização: Dia 09/04/2026 às 01:34:30
+Data de atualização: Dia 09/04/2026 às 21:03:41
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
@@ -30,7 +30,7 @@ Data de atualização: Dia 09/04/2026 às 01:34:30
 | Lucas Carson (lucas4c3r0l4) | 0 | 0.00 |
 | Lucas Renato (Yggdrasil-Lrss) | 22 | 100.00 |
 | Luiz Gustavo Simões (luiz-simoes-nave) | 0 | 0.00 |
-| Manuella Siqueira (manuusiq24) | 0 | 0.00 |
+| Manuella Siqueira (manuusiq24) | 19 | 100.00 |
 | Manuella Siqueira (manyusiq) | 0 | 0.00 |
 | Maria Eloiza (elomorais2) | 0 | 0.00 |
 | Maria Luisa (luhllu08) | 19 | 100.00 |
