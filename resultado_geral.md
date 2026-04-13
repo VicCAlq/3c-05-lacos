@@ -1,4 +1,4 @@
-Data de atualização: Dia 09/04/2026 às 21:03:41
+Data de atualização: Dia 13/04/2026 às 00:08:43
  
 
 | Aluno | Qtd. questões acertadas (de 15) | Nota total |
@@ -32,7 +32,7 @@ Data de atualização: Dia 09/04/2026 às 21:03:41
 | Luiz Gustavo Simões (luiz-simoes-nave) | 0 | 0.00 |
 | Manuella Siqueira (manuusiq24) | 19 | 100.00 |
 | Manuella Siqueira (manyusiq) | 0 | 0.00 |
-| Maria Eloiza (elomorais2) | 0 | 0.00 |
+| Maria Eloiza (elomorais2) | 19 | 100.00 |
 | Maria Luisa (luhllu08) | 19 | 100.00 |
 | Pablo Alves (pabloalves1230) | 22 | 100.00 |
 | Pedro Renan (RenanOruim01) | 22 | 100.00 |
